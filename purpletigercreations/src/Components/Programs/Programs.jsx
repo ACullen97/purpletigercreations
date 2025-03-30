@@ -17,19 +17,24 @@ const Programs = () => {
   };
 
   const images = [
-    "src/assets/Code1.png",
+    "src/assets/CRAASH.png",
     "src/assets/Tiger_Logo_spacey.jpg",
   ];
 
   return (
+    <>
+    <div className="programs"><video src="src/assets/Fuel-Finder-Presentation.mp4" controls></video></div>
     <div className="programs">
+         
       <div className="carousel">
+
         <button
           onClick={prevSlide}
           className="carousel__btn carousel__btn--prev"
         >
           &lt;
         </button>
+
         <img
           src={images[activeIndex]}
           alt={`Slide ${activeIndex}`}
@@ -43,6 +48,7 @@ const Programs = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 

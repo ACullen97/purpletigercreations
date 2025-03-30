@@ -18,10 +18,11 @@ function App() {
         <Navbar/>
         <Hero/>
         <div className='container'>
+        <Title subTitle="" title="About Me"/>
+        <About/>
           <Title subTitle="What's On" title="Latest Projects"/>
           <Programs/>
-          <Title subTitle="" title="About Me"/>
-          <About/>
+    
           <Title subTitle="Music" title="Latest Releases"/>
           <Campus/>
           <Title subTitle="Contact" title="Get in Touch"/>
