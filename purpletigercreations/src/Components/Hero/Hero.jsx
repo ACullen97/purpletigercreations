@@ -1,5 +1,6 @@
 import React from 'react'
 import './Hero.css'
+import { Link, ScrollLink } from 'react-scroll'
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       <br/>
       <p>A blend of cutting-edge design, development, media and audio for your creative projects.</p>
       <br/>
-      <button className='btn'>Explore</button>
+      <Link to='fuel-finder' smooth={true} offset={-100} duration={500}> <button className='btn'>Explore</button></Link>
     </div>
   )
 }

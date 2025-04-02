@@ -30,7 +30,7 @@ const Campus = () => {
 
   return (
     <div className="campus">
-      <div className="carousel">
+      <div className="carousel container-campus">
         <button
           onClick={prevSlide}
           className="carousel__btn carousel__btn--prev"
@@ -43,9 +43,11 @@ const Campus = () => {
           className="carousel__img"
         />
 
+       
+
         <div className="overlay">
           <div className="text"></div>
-          <iframe src={iframes[activeIndex]} width="100%" height="352"></iframe>
+          <iframe src={iframes[activeIndex]} width="100%" height="320px" color="green"></iframe>
         </div>
        
         <button

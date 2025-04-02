@@ -27,3 +27,7 @@ a{
     padding: 14px 25px;
     border-radius: 30px;
 }
+
+.btn:hover{
+    cursor: pointer;
+}

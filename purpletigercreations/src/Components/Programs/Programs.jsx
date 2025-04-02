@@ -16,38 +16,49 @@ const Programs = () => {
     );
   };
 
-  const images = [
-    "src/assets/CRAASH.png",
-    "src/assets/Tiger_Logo_spacey.jpg",
+  const images = ["src/assets/CRAASH.png", "src/assets/Tiger_Logo_spacey.jpg"];
+
+  const description = [
+    "A logo I created for a friend's clothing brand.",
+    "This is the main logo that I created for my Purple Tiger brand, a hand drawn tiger illustration by a friend that I turned into digital artwork.",
   ];
 
   return (
     <>
-    <div className="programs"><video src="src/assets/Fuel-Finder-Presentation.mp4" controls></video></div>
-    <div className="programs">
-         
-      <div className="carousel">
-
-        <button
-          onClick={prevSlide}
-          className="carousel__btn carousel__btn--prev"
-        >
-          &lt;
-        </button>
-
-        <img
-          src={images[activeIndex]}
-          alt={`Slide ${activeIndex}`}
-          className="carousel__img"
-        />
-        <button
-          onClick={nextSlide}
-          className="carousel__btn carousel__btn--next"
-        >
-          &gt;
-        </button>
+      <div className="fuel-finder">
+        <video src="src/assets/Fuel-Finder-Presentation.mp4" controls></video>
+        <br />
+        <p>Final group project for the Northcoders Software Engineering Bootcamp. A fuel prices comparison app built in React Native.</p>
       </div>
-    </div>
+    
+      <div className="programs container-programs">
+        <div className="carousel-programs">
+          <button
+            onClick={prevSlide}
+            className="carousel-programs__btn carousel-programs__btn--prev"
+          >
+            &lt;
+          </button>
+
+          <img
+            src={images[activeIndex]}
+            alt={`Slide ${activeIndex}`}
+            className="carousel-programs__img"
+          />
+
+          <div className="overlay-programs">
+            <div className="text-programs">  <p>{description[activeIndex]}</p></div>
+          
+          </div>
+
+          <button
+            onClick={nextSlide}
+            className="carousel-programs__btn carousel-programs__btn--next"
+          >
+            &gt;
+          </button>
+        </div>
+      </div>
     </>
   );
 };

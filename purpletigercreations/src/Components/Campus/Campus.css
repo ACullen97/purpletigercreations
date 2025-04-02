@@ -61,6 +61,8 @@
     transform: scale(1.05);
   }
 
+  .container-campus{}
+
   .overlay {
     position: absolute;
     top: 0;
@@ -71,11 +73,10 @@
     width: 100%;
     opacity: 0;
     transition: .5s;
-    background-color: none;
     padding-top: 15px;
   }
   
-  .container:hover .overlay {
+  .container-campus:hover .overlay {
     opacity: 1;
   }
   
