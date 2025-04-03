@@ -16,7 +16,7 @@ const Programs = () => {
     );
   };
 
-  const images = ["src/assets/CRAASH.png", "src/assets/Tiger_Logo_spacey.jpg"];
+  const images = ["/src/assets/CRAASH.png", "/src/assets/Tiger_Logo_spacey.jpg"];
 
   const description = [
     "A logo I created for a friend's clothing brand.",
@@ -26,7 +26,7 @@ const Programs = () => {
   return (
     <>
       <div className="fuel-finder">
-        <video className="ff-video" src="src/assets/Fuel-Finder-Presentation.mp4" controls></video>
+        <video className="ff-video" src="/src/assets/Fuel-Finder-Presentation.mp4" controls></video>
         <br />
         <p>Final group project for the Northcoders Software Engineering Bootcamp. A fuel prices comparison app built in React Native.</p>
       </div>
