@@ -55,7 +55,7 @@ display: block;
     right: 0;
   }
   .carousel-programs__img {
-    width: 800px;
+    width: 100%;
     height: auto;
     display: block;
     transition: transform 0.3s ease-in-out;
@@ -81,9 +81,7 @@ display: block;
     align-items: center;
     justify-content: center;
   }
-  .container-programs {
-    
-  }
+
   
   .container-programs:hover .overlay-programs {
     opacity: 1;
@@ -99,4 +97,28 @@ display: block;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+  }
+
+  .ff-video{
+    width: 100%;
+  }
+
+  @media (max-width: 650px){
+    .programs{
+      flex-direction: column;
+
+    }
+
+    .container-programs {
+
+        width: 100%;}
+
+        .fuel-finder{
+          width: 100%;
+        }
+
+        .text-programs{
+          font-size: 14px;
+        }
+    
   }

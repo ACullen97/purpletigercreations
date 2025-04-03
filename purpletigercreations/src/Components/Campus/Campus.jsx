@@ -47,7 +47,7 @@ const Campus = () => {
 
         <div className="overlay">
           <div className="text"></div>
-          <iframe src={iframes[activeIndex]} width="100%" height="320px" color="green"></iframe>
+          <iframe src={iframes[activeIndex]} width="100%" height="320px" frameborder="0"></iframe>
         </div>
        
         <button

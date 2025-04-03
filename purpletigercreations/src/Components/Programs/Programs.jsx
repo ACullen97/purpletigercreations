@@ -26,7 +26,7 @@ const Programs = () => {
   return (
     <>
       <div className="fuel-finder">
-        <video src="src/assets/Fuel-Finder-Presentation.mp4" controls></video>
+        <video className="ff-video" src="src/assets/Fuel-Finder-Presentation.mp4" controls></video>
         <br />
         <p>Final group project for the Northcoders Software Engineering Bootcamp. A fuel prices comparison app built in React Native.</p>
       </div>
@@ -48,7 +48,6 @@ const Programs = () => {
 
           <div className="overlay-programs">
             <div className="text-programs">  <p>{description[activeIndex]}</p></div>
-          
           </div>
 
           <button

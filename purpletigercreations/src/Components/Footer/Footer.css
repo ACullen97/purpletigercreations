@@ -13,3 +13,14 @@
     display: inline-block;
     margin: 20px;
 }
+
+@media (max-width: 750px){
+    .footer{
+        display: block;
+        
+    }
+
+    .footer ul li{
+        display: block;
+    }
+}
