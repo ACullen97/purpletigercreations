@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Programs.css";
+import craash from "../../assets/CRAASH.png";
+import tiger from "../../assets/Tiger_Logo_spacey.jpg";
+import videoFF from "../../assets/Fuel-Finder-Presentation.mp4";
 
 const Programs = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -16,7 +19,7 @@ const Programs = () => {
     );
   };
 
-  const images = ["/src/assets/CRAASH.png", "/src/assets/Tiger_Logo_spacey.jpg"];
+  const images = [craash, tiger];
 
   const description = [
     "A logo I created for a friend's clothing brand.",
@@ -26,7 +29,7 @@ const Programs = () => {
   return (
     <>
       <div className="fuel-finder">
-        <video className="ff-video" src="/src/assets/Fuel-Finder-Presentation.mp4" controls></video>
+        <video className="ff-video" src={videoFF} controls></video>
         <br />
         <p>Final group project for the Northcoders Software Engineering Bootcamp. A fuel prices comparison app built in React Native.</p>
       </div>

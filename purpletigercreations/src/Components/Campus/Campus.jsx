@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import "./Campus.css";
 
+import weirdWorld from "../../assets/Weird_World_Artwork.png";
+import grimeTime from "../../assets/Grime_Time.png";
+import stralis from "../../assets/STRALIS.jpg";
+
 const Campus = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
@@ -17,9 +21,9 @@ const Campus = () => {
   };
 
   const images = [
-    "/src/assets/Weird_World_Artwork.png",
-    "/src/assets/Grime_Time.png",
-    "/src/assets/STRALIS.jpg",
+    weirdWorld,
+    grimeTime,
+    stralis,
   ];
 
   const iframes = [
