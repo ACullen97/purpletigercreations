@@ -16,7 +16,7 @@ const Programs = () => {
     );
   };
 
-  const images = ["src/assets/CRAASH.png", "src/assets/Tiger_Logo_spacey.jpg"];
+  const images = ["../../assets/CRAASH.png", "../../assets/Tiger_Logo_spacey.jpg"];
 
   const description = [
     "A logo I created for a friend's clothing brand.",

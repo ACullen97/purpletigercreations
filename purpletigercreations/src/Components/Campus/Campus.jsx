@@ -17,9 +17,9 @@ const Campus = () => {
   };
 
   const images = [
-    "src/assets/Weird_World_Artwork.png",
-    "src/assets/Grime_Time.png",
-    "src/assets/STRALIS.jpg",
+    "../../assets/Weird_World_Artwork.png",
+    "../../assets/Grime_Time.png",
+    "../../assets/STRALIS.jpg",
   ];
 
   const iframes = [
